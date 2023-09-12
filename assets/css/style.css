@@ -28,3 +28,28 @@ h1 {
     width: 250px;
     height: 30px;
 }
+
+/* Styles the button with color, sets the width, and gets rid of the border line */
+.btn {
+    width: 258px;
+    color: white;
+    background-color: #6495ED;
+    border: none;
+}
+
+/* Sets the button to the left and gives proper padding in relation to the text above */
+.adjust-btn {
+    float: left;
+    padding-top: 5px;
+}
+
+/* When the user clicks on the button, it bounces downwards and changes color */
+.btn:active {
+    background-color: #1E90FF;
+    transform: translateY(4px);
+}
+
+
+
+
+
