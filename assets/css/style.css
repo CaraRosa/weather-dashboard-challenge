@@ -51,6 +51,10 @@ h1 {
     transform: translateY(4px);
 }
 
-
-
+/* Sets margin top and left and the width to the horizontal line */
+hr {
+    margin-top: 50px;
+    width: 255px;
+    margin-left: 1px;
+}
 
