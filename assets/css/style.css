@@ -16,10 +16,15 @@ h1 {
     padding-top: 5px;
 }
 
-/* Class Selector */
+/* Class Selectors */
 /* Styles header two with bolding and font size */
 .bold {
     font-weight: bold;
     font-size: 25px;
 }
 
+/* Sets the width and height of the input box */
+.form-input {
+    width: 250px;
+    height: 30px;
+}
