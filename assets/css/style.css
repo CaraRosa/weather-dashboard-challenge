@@ -1,6 +1,18 @@
+/* Class Selector */
+/* Styles the blue gradient bar with proper colors and height */
 .header-elements {
     background-color: blue;
     background-image: linear-gradient(to right, #4169E1, #0000CD, #000080);
     height: 50px;
+    
+}
+
+/* Element Selector */
+/* Styles the header with proper color, indentation, and padding */
+h1 {
+    color: white;
+    text-align: left;
+    text-indent: 60%;
+    padding-top: 5px;
 }
 
