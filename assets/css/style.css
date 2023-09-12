@@ -16,3 +16,10 @@ h1 {
     padding-top: 5px;
 }
 
+/* Class Selector */
+/* Styles header two with bolding and font size */
+.bold {
+    font-weight: bold;
+    font-size: 25px;
+}
+
