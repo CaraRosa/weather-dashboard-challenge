@@ -5,7 +5,7 @@ let requestURL = "https://api.openweathermap.org/data/2.5/forecast?lat=30.26&lon
 // Accessing elements by ID
 const submitBtn = document.querySelector("#submit-btn");
 
-
+// Saving user input to local storage
 if (localStorage.getItem("userInput")) {
     var userInputHistory = JSON.parse(localStorage.getItem("userInput"));
 } else {
@@ -35,7 +35,7 @@ document.getElementById("submit-btn").addEventListener("click", function(event) 
     console.log("click");
 });
 
-
+// Renders user input to the webpage
 document.getElementById("submit-btn").addEventListener("click", function(event) {
 var userInputHistory = JSON.parse(localStorage.getItem("userInput"));
 var searchList = document.getElementById("searchList");
