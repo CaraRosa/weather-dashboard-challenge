@@ -34,3 +34,25 @@ document.getElementById("submit-btn").addEventListener("click", function(event) 
 
     console.log("click");
 });
+
+
+document.getElementById("submit-btn").addEventListener("click", function(event) {
+var userInputHistory = JSON.parse(localStorage.getItem("userInput"));
+var searchList = document.getElementById("searchList");
+
+if (userInputHistory !== null) {
+    searchList.innerHTML = "";
+
+    userInputHistory.forEach(function (userInput) {
+        var listSearchItem = document.createElement("p");
+        listSearchItem.textContent = userInput.userInput;
+        searchList.appendChild(listSearchItem);
+    })
+}
+
+});
+
+
+
+
+
