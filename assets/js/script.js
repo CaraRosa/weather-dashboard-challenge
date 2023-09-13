@@ -5,38 +5,32 @@ let requestURL = "https://api.openweathermap.org/data/2.5/forecast?lat=30.26&lon
 // Accessing elements by ID
 const submitBtn = document.querySelector("#submit-btn");
 
-if (localStorage.getItem("userSearch")) {
-    var userSearchHistory = JSON.parse(localStorage.getItem("userSearch"));
+
+if (localStorage.getItem("userInput")) {
+    var userInputHistory = JSON.parse(localStorage.getItem("userInput"));
 } else {
-    var userSearchHistory = [];
+    var userInputHistory = [];
 }
 
-console.log(typeof userSearchHistory);
+console.log(typeof userInputHistory);
 
 document.getElementById("submit-btn").addEventListener("click", function(event) {
     // prevents the form from submitting
     event.preventDefault();
 
-
-    var userInput = document.getElementById('search-input').value;
-
-    var userSearch = {
-        userSearch: userInput,  
+    var search = document.getElementById("search-input").value;
+    
+    var userInput = {
+        userInput: search,
     }
 
-    if(userInput.trim() !== "") {
-        userSearchHistory.push(userSearch);
-        localStorage.setItem("userSearch", JSON.stringify(userSearchHistory));
-        console.log("user search", userInput);
+    if (search.trim() !== "") {
+        userInputHistory.push(userInput);
+        localStorage.setItem("userInput", JSON.stringify(userInputHistory));
+        console.log("user search", search);
     } else {
         console.log("Please enter a city.");
     }
 
-    console.log("click submit button");
-
-
+    console.log("click");
 });
-
-
-
-
