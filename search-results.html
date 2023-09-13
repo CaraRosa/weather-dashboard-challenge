@@ -3,9 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather Results</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
+    <header class="header-elements">
+        <h1 class="text-primary">Weather Dashboard</h1>
+    </header>
+    <h2 class="bold">Search for a City:</h2>
+    <form id="search-form" class="form">
+        <input id="search-input" class="form-input" type="text" placeholder="San Diego">
+    </form>
+    <div class="adjust-btn">
+        <button id="submit-btn" class="btn">Search</button>
+    </div>
+    <hr />
     
+    <script src="./assets/js/display-search.js"></script>
 </body>
 </html>
