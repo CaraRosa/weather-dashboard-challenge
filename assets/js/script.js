@@ -31,7 +31,8 @@ document.addEventListener('DOMContentLoaded', function () {
         event.preventDefault();
 
         var search = document.getElementById('search-input').value;
-
+        getWeatherData(search);
+        
         var userInput = {
             userInput: search,
         };
