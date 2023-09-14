@@ -9,11 +9,11 @@
 
 /* Element Selector */
 /* Styles the header with proper color, indentation, and padding */
-h1 {
+.text-primary {
     color: white;
     text-align: left;
     text-indent: 50%;
-    padding-top: 5px;
+    padding-top: 10px;
 }
 
 /* Class Selectors */
@@ -58,10 +58,11 @@ hr {
     margin-left: 1px;
 }
 
-/* #searchList {
-    border-radius: 20px;
-    background: #C0C0C0;
-} */
+#searchList {
+    /* border-radius: 20px;
+    background: #C0C0C0; */
+    margin-top: 20px;
+}
 
 /* creates the box for the current city and day */
 #current-weather {
@@ -71,7 +72,7 @@ hr {
     width: 970px;
     position: absolute;
     right: -10px;
-    margin-top: -150px;
+    margin-top: -190px;
     margin-right: 160px;
     
 }
@@ -159,6 +160,20 @@ h3 {
     right: 10px;
     top: 297px;
     height: 180px;
+}
+
+@media screen and (min-width: 500px) {
+    .text-primary {
+       font-size: 20px;
+    }
+    
+}
+
+@media screen and (min-width: 1025px) {
+    .text-primary {
+       font-size: 30px;
+    }
+    
 }
 
 
