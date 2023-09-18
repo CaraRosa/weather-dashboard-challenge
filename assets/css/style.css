@@ -92,75 +92,6 @@ h3 {
     font: bold;
 }
 
-/* Styles the card with weather info */
-#weather-card-one {
-    background-color: #36454F;
-    width: 90px;
-    padding: 50px;
-    margin: 20px;
-    padding-top: 2px;
-    color: white;
-    position:absolute;
-    left: 250px;
-    top: 300px;
-    height: 180px;
-}
-
-/* Styles the card with weather info */
-#weather-card-two {
-    background-color: #36454F;
-    width: 90px;
-    padding: 50px;
-    margin: 20px;
-    padding-top: 2px;
-    color: white;
-    position:absolute;
-    left: 480px;
-    top: 297px;
-    height: 180px;
-}
-
-/* Styles the card with weather info */
-#weather-card-three {
-    background-color: #36454F;
-    width: 90px;
-    padding: 50px;
-    margin: 20px;
-    padding-top: 2px;
-    color: white;
-    position:absolute;
-    left: 720px;
-    top: 297px;
-    height: 180px;
-}
-
-/* Styles the card with weather info */
-#weather-card-four {
-    background-color: #36454F;
-    width: 90px;
-    padding: 50px;
-    margin: 20px;
-    padding-top: 2px;
-    color: white;
-    position:absolute;
-    left: 950px;
-    top: 297px;
-    height: 180px;
-}
-
-/* Styles the card with weather info */
-#weather-card-five {
-    background-color: #36454F;
-    width: 90px;
-    padding: 50px;
-    margin: 20px;
-    padding-top: 2px;
-    color: white;
-    position:absolute;
-    right: 10px;
-    top: 297px;
-    height: 180px;
-}
 
 @media screen and (min-width: 500px) {
     .text-primary {
@@ -176,5 +107,18 @@ h3 {
     
 }
 
+/* Class Selectors */
+/* sets cards in the same line */
+.cards-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
 
-
+/* Applies background color and spacing */
+.card {
+    background-color: #ccc;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    width: 170px;
+}
