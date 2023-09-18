@@ -1,5 +1,5 @@
 const baseURL = 'https://api.openweathermap.org/data/2.5/forecast';
-// const APIKey = '8ffcaf78a4d3963d8cfc46aad122cce3';
+
 const weatherResultEl = document.querySelector('#weather-result');
 
 // converts temperature
@@ -22,9 +22,9 @@ var getWeatherData = function(cityName) {
         })
         .then(function (data) {
             var weatherCardsContainer = document.getElementById('weather-cards-container');
-
             // clears previous weather to allow for new weather
             weatherCardsContainer.innerHTML = '';
+            console.log(data.list);
 
             for (let index = 0; index < data.list.length; index++) {
                 const element = data.list[index];
@@ -35,19 +35,28 @@ var getWeatherData = function(cityName) {
                     const temperatureFahrenheit = convertTemp(temperatureKelvin);
                     const wind = element.wind.speed;
                     const humidity = element.main.humidity;
+                    const icon = element.weather[0].icon;
 
                     // create the 5 cards
                     var card = document.createElement('div');
                     card.classList.add('weather-card');
 
+                    // this creates an image element for the weather icons
+                    var iconImg = document.createElement('img');
+                    iconImg.classList.add('weather-icon');
+                    // Construct the URL for the weather icon
+                    iconImg.src = `https://openweathermap.org/img/wn/${icon}.png`;
+                    iconImg.alt = 'Weather Icon';
+
                     // info that is to be displayed in the 5 cards
                     card.innerHTML = `
                         <h3>Date: <span class="date">${date}</span></h3>
-                        <p>Temperature: <span class="temperature">${temperatureFahrenheit}</span>°F</p>
-                        <p>Wind: <span class="wind">${wind}</span></p>
-                        <p>Humidity: <span class="humidity">${humidity}</span></p>
-                    `;
+                        <p>Temperature: <span class="temperature">${temperatureFahrenheit} </span>°F</p>
+                        <p>Wind: <span class="wind">${wind} MPH</span></p>
+                        <p>Humidity: <span class="humidity">${humidity} %</span></p>`;
 
+                        // appending the icon image to the weather card
+                    card.appendChild(iconImg);
                     // appends the card to the container
                     weatherCardsContainer.appendChild(card);
                 }
