@@ -14,6 +14,7 @@ var getWeatherData = function(cityName) {
             }
         })
         .then(function (data) {
+            var html = '';
             // displayWeather(data, longitude, latitude);
             console.log(data.list);
 
@@ -24,14 +25,18 @@ var getWeatherData = function(cityName) {
 
                 if (element.dt_txt.endsWith('12:00:00')) {
                     console.log(element);
+                    const date = element.dt_txt;
+                    const temperature = element.main.temp;
+                    const wind = element.wind.speed;
+                    const humidity = element.main.humidity;
+                    html += `<p>Date: ${date}, Temperature: ${temperature}°C, Wind: ${wind}, Humidity: ${humidity} </p>`;
                     // element.main.temp
                     // appendChild or innerHTML to display results
                 }
             }
-
+            weatherResultEl.innerHTML = html;
         })
         .catch(function (error) {
             alert('Unable to connect to Open Weather:' + error.message);
         });
 };
-
