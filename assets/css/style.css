@@ -59,22 +59,7 @@ hr {
 }
 
 #searchList {
-    /* border-radius: 20px;
-    background: #C0C0C0; */
     margin-top: 20px;
-}
-
-/* creates the box for the current city and day */
-#current-weather {
-    border: 1px solid grey;
-    padding: 20px;
-    height: 150px;
-    width: 970px;
-    position: absolute;
-    right: -10px;
-    margin-top: -190px;
-    margin-right: 160px;
-    
 }
 
 /* Styles header three */
@@ -83,13 +68,19 @@ h3 {
     font-size: 25px;
 }
 
-/* Styles the current day for weather*/
-#forecast-days {
-    font-size: 20px;
-    margin-top: 30px;
-    position:absolute;
-    left: 275px;
-    font: bold;
+/* Class Selectors */
+/* Styles the 5 weather cards */
+.weather-card {
+    background-color: lightgray;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Centers the cards */
+#weather-cards-container {
+    text-align: center;
 }
 
 
@@ -107,18 +98,5 @@ h3 {
     
 }
 
-/* Class Selectors */
-/* sets cards in the same line */
-.cards-container {
-    display: flex;
-    flex-wrap: nowrap;
-}
 
-/* Applies background color and spacing */
-.card {
-    background-color: #ccc;
-    padding: 10px;
-    margin-right: 10px;
-    border-radius: 5px;
-    width: 170px;
-}
+
