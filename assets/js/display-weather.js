@@ -26,6 +26,7 @@ var getWeatherData = function(cityName) {
             weatherCardsContainer.innerHTML = '';
             console.log(data.list);
 
+        
             for (let index = 0; index < data.list.length; index++) {
                 const element = data.list[index];
 
