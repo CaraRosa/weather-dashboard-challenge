@@ -84,6 +84,7 @@ h3 {
 }
 
 
+/* makes the elements on the page responsive to window resizing */
 @media screen and (min-width: 500px) {
     .text-primary {
        font-size: 20px;
