@@ -8,8 +8,10 @@ The Weather Dashboard is created with the use of HTML, CSS, and JavaScript. The 
 
 ## Installation
 
-No installation is needed for this webpage. This is the link to the deployed application: 
+No installation is needed for this webpage. This is the link to the deployed application: [Link](https://cararosa.github.io/weather-dashboard-challenge/)
 Below is the screenshot of the webpage in my browser window:
+![Weather Dashboard](./assets/images/weather_page.png)
+
 
 ## Credits
 
