@@ -21,6 +21,7 @@ var getWeatherData = function(cityName) {
             }
         })
         .then(function (data) {
+
             var weatherCardsContainer = document.getElementById('weather-cards-container');
             // clears previous weather to allow for new weather
             weatherCardsContainer.innerHTML = '';
