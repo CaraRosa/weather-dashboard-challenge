@@ -15,7 +15,7 @@ Below is the screenshot of the webpage in my browser window:
 
 ## Credits
 
-My tutor was able to assist me in accessing the OpenWeather API correctly. In addition, he helped me in narrowing down the number of days that would be displayed. To display the 5 day forecast, he said I could target the same timestamp for each day (ie. noon). This code can be found in the folder assets within the subfolder js under file name display-weather.js. He was also able to point out that I needed to link my JS file. This code can be found in search-results.html. The tutor noted that I declared my API key twice. At his reccomendation, I deleted one of the declarations. This code was deleted from display-weather.js.
+My tutor was able to assist me in accessing the OpenWeather API correctly. In addition, he helped me in narrowing down the number of days that would be displayed. To display the 5 day forecast, he said I could target the same timestamp for each day (ie. noon). This code can be found in the folder assets within the subfolder js under file name display-weather.js. He was also able to point out that I needed to link my JS file. This code can be found in search-results.html. The tutor noted that I declared my API key twice. At his reccomendation, I deleted one of the declarations. This code was deleted from display-weather.js. My instructor and a TA were able to assist me when my application did not work after I deployed it to GitHub. This code can be found in index.html.
 
 ## License
 
